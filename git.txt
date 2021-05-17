@@ -1,0 +1,19 @@
+Рабочее окружение
+У вас чистая операционнная система с установленными программами git, nano, ssh. Ваш публичный ключь уже 
+добавлен к git репозиторию и вы имеете полный доступ на чтение/запись, но он отсутствует на вашем компьютере. 
+Репозиторий: git@example.com:example/test.git Ветки: master, dev, stage, release
+
+Задание
+Внести изменения в ветке dev репозитория git@example.com:example/test.git, добавив в корень файл Readme.md с
+текстом ### May be in future и залить их на удаленный репозиторий. Напишите набор команд для решения этой 
+задачи с коментариями.
+
+ git clone git@example.com:example/test.git # клонирую репозиторий на компьютер
+ cd test # захожу в созданную папку
+ git checkout dev # переключаюсь на ветку dev
+ echo "### May be in future" > Readme.md # создаю файл Readme.md с записью
+ git add Readme.md # добавляю файл в отслеживаемые
+ git commit -m "example commit" # добавляю коммит
+ git push origin dev # отправляю изменения на ветку dev
+
+ 
