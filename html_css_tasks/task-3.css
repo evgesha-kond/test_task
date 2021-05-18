@@ -1,0 +1,29 @@
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    border: none;
+    background-color: #4676D7;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:active{
+    background-color: #1d49aa;
+}
+
+.button[disabled]{
+    background-color: #6c7589;
+    color: #cfd3d9;
+}
+
+.button[danger]{
+    background-color: #be2c2c;
+}
+
